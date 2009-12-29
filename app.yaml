@@ -1,4 +1,4 @@
-application: labbybot
+application: labnotebot
 version: 1
 runtime: python
 api_version: 1
@@ -8,4 +8,4 @@ handlers:
   static_dir: gadgets
 
 - url: .*
-  script: main.py
+  script: LabbyBot.py
