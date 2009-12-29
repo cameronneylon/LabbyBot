@@ -1,0 +1,11 @@
+application: LabbyBot
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /gadgets
+  static_dir: gadgets
+
+- url: .*
+  script: main.py
