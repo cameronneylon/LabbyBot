@@ -1,11 +1,11 @@
 application: labnotebot
-version: 1
+version: 2
 runtime: python
 api_version: 1
 
 handlers:
+- url: /-wave/.*
+  script: labnotebot.py
+
 - url: /gadgets
   static_dir: gadgets
-
-- url: .*
-  script: LabbyBot.py
