@@ -56,7 +56,7 @@
       // Add an event handler to fire when someone selects a menu item from the feed
       $("#feedentries").change( function() {
  
-           alert('selectedentry_url: ' + this.value) ;
+           // alert('selectedentry_url: ' + this.value) ;
  
            wave.getState().submitDelta({'selectedentry_url': this.value }) ;
  
