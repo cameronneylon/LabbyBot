@@ -15,7 +15,7 @@
  
     var div = document.getElementById('content_div');
  
-   function stateUpdated () {
+    function stateUpdated () {
        myJSONtext = wave.getState().get('list', '') ;  // default to the empty string
        
        // Check to see if the list variable changed during this state update
@@ -59,6 +59,8 @@
            //alert('selectedentry_url: ' + this.value) ;
  
            wave.getState().submitDelta({'selectedentry_url': this.value }) ;
+
+	   //alert(wave.getState())
  
             var myObject = JSON.parse(myJSONtext_prev) ;
  
