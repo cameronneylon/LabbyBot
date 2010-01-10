@@ -59,7 +59,6 @@
            alert('selectedentry_url: ' + this.value) ;
  
            wave.getState().submitDelta({'selectedentry_url': this.value }) ;
-
  
             var myObject = JSON.parse(myJSONtext_prev) ;
  
@@ -74,9 +73,9 @@
                       // <option value='http://foo.bar/' id='option2'>img03338</option>
  
   			if(url == this.value) {
-				alert('selectedentry_title: ' + menuitem) ;
+				// alert('selectedentry_title: ' + menuitem) ;
               wave.getState().submitDelta({'selectedentry_title': menuitem }) ;
-				alert('selectedentry_img: ' + img) ;
+				// alert('selectedentry_img: ' + img) ;
               wave.getState().submitDelta({'selectedentry_img': img }) ;
                      }
  
