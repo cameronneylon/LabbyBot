@@ -37,7 +37,7 @@
                       // We want to add an option like the following
                       // <option value='http://foo.bar/' id='option2'>img03338</option>
  
-                      $("#feedentries").append("<option value=\""+url+"\" id=\"option"+i+"\">"+menuitem+"</option>") ; 
+                      $("#feedentries").replaceWith("<option value=\""+url+"\" id=\"option"+i+"\">"+menuitem+"</option>") ; 
                 }
  
           } else {
